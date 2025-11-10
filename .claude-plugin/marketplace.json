@@ -1,0 +1,31 @@
+{
+  "name": "flutter-agent-marketplace",
+  "owner": {
+    "name": "sheiquezakir",
+    "email": "zakir.husain@compatio.ai"
+  },
+  "plugins": [
+    {
+      "name": "flutter-agent",
+      "source": {
+        "source": "github",
+        "repo": "sheiquezakir/Flutter-Agent"
+      },
+      "description": "Production-grade Flutter development agent with Clean Architecture, Riverpod state management, OWASP Mobile Top 10 security, comprehensive testing, and CI/CD automation.",
+      "version": "1.2.0",
+      "author": {
+        "name": "sheiquezakir",
+        "email": "zakir.husain@compatio.ai"
+      },
+      "homepage": "https://github.com/sheiquezakir/Flutter-Agent",
+      "license": "MIT",
+      "keywords": [
+        "flutter",
+        "clean-architecture",
+        "riverpod",
+        "security",
+        "owasp"
+      ]
+    }
+  ]
+}

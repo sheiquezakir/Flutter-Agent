@@ -20,16 +20,16 @@ An intelligent Flutter development system that helps you build **production-grad
 
 ## 🚀 Get Started in 3 Minutes
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Install as Claude Code Plugin (Recommended)
 
 ```bash
-git clone https://github.com/sheiquezakir/Flutter-Agent.git
-cd Flutter-Agent
+/plugin marketplace add sheiquezakir/Flutter-Agent
+/plugin install flutter-agent
 ```
 
-### 2️⃣ Use with Claude Code
+Done! Skills are now available in Claude Code.
 
-Ask Claude naturally about your Flutter app:
+### 2️⃣ Ask Claude Naturally
 
 ```
 I need to build a messaging app with:
@@ -37,18 +37,21 @@ I need to build a messaging app with:
 - Real-time chat
 - Image sharing
 - Offline support
+
+What architecture would you recommend?
 ```
 
-Claude automatically uses the Flutter Expert skill to help you build it.
+Claude automatically activates the Flutter Expert skill.
 
-### 3️⃣ Or Use Templates Directly
+### 3️⃣ Or Clone for Direct Access
 
 ```bash
-cp -r .claude/templates/flutter/clean_architecture my-app
+git clone https://github.com/sheiquezakir/Flutter-Agent.git
+cp -r Flutter-Agent/templates/flutter/clean_architecture my-app
 cd my-app && flutter pub get && flutter run
 ```
 
-**👉 [Full Setup Guide →](docs/QUICK_START.md)**
+**👉 [Plugin Installation Guide →](docs/PLUGIN_INSTALLATION.md) | [Full Setup Guide →](docs/QUICK_START.md)**
 
 ## 📚 Choose Your Path
 

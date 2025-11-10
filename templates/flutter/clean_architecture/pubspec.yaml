@@ -1,0 +1,106 @@
+name: flutter_clean_app
+description: A production-grade Flutter app with Clean Architecture, Riverpod, and security best practices.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # STATE MANAGEMENT - Riverpod (primary)
+  riverpod: ^2.5.0
+  flutter_riverpod: ^2.5.0
+  riverpod_generator: ^2.5.0
+  hooks_riverpod: ^2.5.0
+
+  # HTTP & API
+  dio: ^5.4.0
+  retrofit: ^4.1.0
+
+  # DEPENDENCY INJECTION
+  injectable: ^2.3.0
+  get_it: ^7.6.0
+
+  # DATA MODELS & SERIALIZATION
+  freezed_annotation: ^2.4.0
+  json_annotation: ^4.8.0
+
+  # LOCAL STORAGE
+  flutter_secure_storage: ^9.0.0
+  drift: ^2.14.0
+  sqlite3_flutter_libs: ^0.5.0
+
+  # API SECURITY
+  http_certificate_pinning: ^1.6.0
+
+  # ROUTING
+  go_router: ^14.0.0
+
+  # DESIGN & UI
+  flutter_screenutil: ^5.9.0  # Responsive design
+  cached_network_image: ^3.3.0
+
+  # UTILITIES
+  intl: ^0.19.0  # Localization
+  fpdart: ^1.1.0  # Functional programming utilities
+  uuid: ^4.0.0
+
+  # FIREBASE (optional but recommended)
+  firebase_core: ^28.0.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.18.0
+  firebase_crashlytics: ^3.5.0
+  firebase_analytics: ^11.0.0
+
+  # LOGGING & ERROR TRACKING
+  logger: ^2.1.0
+  sentry_flutter: ^7.15.0
+
+  # ENVIRONMENT VARIABLES
+  flutter_dotenv: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+  # BUILD TOOLS & CODE GENERATION
+  build_runner: ^2.4.0
+  freezed: ^2.4.0
+  json_serializable: ^6.7.0
+  injectable_generator: ^2.3.0
+  retrofit_generator: ^7.1.0
+  drift_dev: ^2.14.0
+
+  # TESTING
+  mockito: ^5.4.0
+  mocktail: ^1.1.0
+
+flutter:
+  uses-material-design: true
+
+  # Localization
+  generate: true
+
+  # Assets
+  assets:
+    - assets/
+    - assets/images/
+    - assets/icons/
+
+  # Fonts
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Light.ttf
+          weight: 300

@@ -5,7 +5,9 @@
       "Bash(git commit:*)",
       "Bash(git pull:*)",
       "Bash(git add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:code.claude.com)",
+      "Bash(tree:*)"
     ],
     "deny": [],
     "ask": []

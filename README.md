@@ -22,12 +22,54 @@ A comprehensive **Flutter development agent** and **knowledge system** for build
 - ✅ **Performance Optimized** (const widgets, lazy loading, Impeller)
 - ✅ **Context-Efficient** (MCP-inspired progressive capability loading)
 
-## 🎯 Quick Start
+## 📦 Installation
 
-### 1. Use with Claude Code
+Choose one method to get started:
+
+### Method 1: Clone Full Repository (Recommended)
 
 ```bash
-# Use the Flutter expert skill
+git clone https://github.com/sheiquezakir/Flutter-Agent.git
+cd Flutter-Agent
+# Skills are ready to use!
+/use flutter-expert
+```
+
+### Method 2: Copy to Your Project
+
+```bash
+# Clone repository (if you haven't)
+git clone https://github.com/sheiquezakir/Flutter-Agent.git
+
+# Copy skills to your project
+cp -r Flutter-Agent/.claude your-project/
+cd your-project
+/use flutter-expert
+```
+
+### Method 3: Global Installation
+
+```bash
+# macOS/Linux
+mkdir -p ~/.config/claude/skills
+cp -r Flutter-Agent/.claude/skills/* ~/.config/claude/skills/
+
+# Windows (PowerShell)
+Copy-Item "Flutter-Agent\.claude\skills\*" "$env:APPDATA\Claude\skills" -Recurse
+
+# Now available in all projects!
+/use flutter-expert
+```
+
+**📖 [Full Installation Guide](INSTALLATION.md)** - Step-by-step instructions for all platforms
+
+## 🎯 Quick Start
+
+### Step 0: Install (Choose Method Above)
+
+### Step 1: Use with Claude Code
+
+```bash
 /use flutter-expert
 
 # Describe your app:
@@ -39,10 +81,9 @@ I need to build a social media app with:
 - Offline support
 
 Target: iOS, Android, Web
-Timeline: 3 months
 ```
 
-### 2. Use Templates Directly
+### Step 2: Use Templates Directly
 
 ```bash
 # Copy the clean architecture template
@@ -52,8 +93,9 @@ flutter pub get
 flutter run
 ```
 
-### 3. Follow the Documentation
+### Step 3: Follow the Documentation
 
+- **Installation**: See [INSTALLATION.md](INSTALLATION.md)
 - **Getting Started**: See [QUICK_START.md](docs/QUICK_START.md)
 - **Using the Agent**: See [AGENT_USAGE.md](.claude/docs/AGENT_USAGE.md)
 - **Best Practices**: See [flutter-guidelines.md](.claude/docs/flutter-guidelines.md)

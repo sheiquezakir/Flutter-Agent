@@ -11,9 +11,39 @@ Get started with the Flutter Expert Agent in 5 minutes! 🚀
 
 ## Option 1: Use with Claude Code (Recommended)
 
-### Step 1: Access the Agent
+### Step 0: Install the Skills
 
-In Claude Code or Claude interface:
+First, ensure skills are installed. See [INSTALLATION.md](../INSTALLATION.md) for detailed instructions.
+
+**Quick Install:**
+
+```bash
+# Clone the repository
+git clone https://github.com/sheiquezakir/Flutter-Agent.git
+
+# Option A: Use from repository directory (recommended)
+cd Flutter-Agent
+
+# Option B: Copy to your project
+cp -r Flutter-Agent/.claude your-project/
+cd your-project
+```
+
+### Step 1: Verify Installation
+
+In Claude Code:
+
+```
+/use flutter-expert
+
+What are your capabilities?
+```
+
+You should see the agent respond with its capabilities.
+
+### Step 2: Access the Agent
+
+Now describe your app:
 
 ```
 /use flutter-expert
@@ -29,7 +59,7 @@ Target platforms: iOS, Android
 Design: Material Design 3
 ```
 
-### Step 2: Follow the Agent's Guidance
+### Step 3: Follow the Agent's Guidance
 
 The agent will:
 1. Ask clarifying questions
@@ -38,7 +68,7 @@ The agent will:
 4. Give security recommendations
 5. Setup testing framework
 
-### Step 3: Implement Locally
+### Step 4: Implement Locally
 
 ```bash
 # Copy generated code to your machine
@@ -51,6 +81,8 @@ flutter test
 # Start developing
 flutter run
 ```
+
+**Need help?** See [INSTALLATION.md](../INSTALLATION.md) for troubleshooting.
 
 ## Option 2: Use Templates Directly
 
